@@ -4,7 +4,7 @@ The windnsdock container will synchronize the local `C:\Windows\System32\drivers
 
 ```
 docker pull jeffcyr/windnsdock
-docker run -d --isolation process --name windnsdock --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v C:\Windows\System32\drivers\etc:C:\etc windnsdock
+docker run -d --isolation process --name windnsdock --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v C:\Windows\System32\drivers\etc:C:\etc jeffcyr/windnsdock
 ```
 
 https://hub.docker.com/r/jeffcyr/windnsdock
